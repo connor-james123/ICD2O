@@ -29,10 +29,10 @@ button {
   cursor: pointer;
   font-size: 25px;
 }
-div{
+div {
   display: flex;
     justify-content: center;
     align-items: center;
-    height: 274px;
+    height: 40px;
     border: 1px solid black;
 }
