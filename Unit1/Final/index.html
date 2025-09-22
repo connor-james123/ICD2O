@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+<!--Links-->
+    <link rel="stylesheet" href="./css/style.css">
+
+<!--Navigation-->
+      <link rel="stylesheet" 
+        href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+      <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js">
+      </script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--Metadata-->
+      <meta charset="utf-8"><meta name="description" content="My first webpage with proper style">
+      <meta name="keywords" content="cj's travel guide">
+      <meta name="author" content="Connor James">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CJ's Travel Guide</title>
+
+    
+  </head>
+    <body>
+<!--Navigation-->
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">CJ's Travel Guide</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="./index.html" style="color:gray">Home</a>
+        <a class="mdl-navigation__link" href="./locations.html" style="color:gray">Locations</a>
+        <a class="mdl-navigation__link" href="./search.html" style="color:gray">Search</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">CJ's Travel Guide</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="./index.html">Home</a>
+      <a class="mdl-navigation__link" href="./locations.html">Locations</a>
+      <a class="mdl-navigation__link" href="./search.html">Search</a>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+    <div class="page-content"></div>
+  </main>
+</div>
+<br>
+<br>
+<!--Header-->
+    <h1 class="mainheader">
+      Welcome to CJ's Travel Guide
+      <h3>
+        Live to Travel
+      </h3>
+    </h1>
+
+<!-- Wide card with share menu button -->
+<style>
+  .demo-card-wide.mdl-card {
+    width: 512px;
+  }
+
+  .demo-card-wide>.mdl-card__title {
+    color: #000000;
+    height: 176px;
+    background: url('./images/travel.jpg') center / cover;
+  }
+
+  .demo-card-wide>.mdl-card__menu {
+    color: #4057d8;
+  }
+</style>
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Our Travel Guide</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    With our Travel Guide, you will have no problem finding a great place to travel to.
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a id="getStarted"class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button id="Search" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">search</i>
+    </button>
+  </div>
+</div>
+<br>
+<!--Image Wheel-->
+    <h4>
+      Travel Pictures!
+      <div class="scroll-container">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+      </div>
+    </h4>
+    </body>
+</html>
