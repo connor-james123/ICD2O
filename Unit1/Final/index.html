@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-ca">
   <head>
+    
 <!--Links-->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -19,7 +20,7 @@
 
     
   </head>
-    <body>
+    <body style="background-color: #7aa5ce;">
 <!--Navigation-->
 <!-- Always shows a header, even in smaller screens. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -54,9 +55,9 @@
 <br>
 <br>
 <!--Header-->
-    <h1 class="mainheader">
+    <h1 style="text-align: center; "class="mainheader">
       Welcome to CJ's Travel Guide
-      <h3>
+      <h3 class="mainheader">
         Live to Travel
       </h3>
     </h1>
@@ -65,11 +66,13 @@
 <style>
   .demo-card-wide.mdl-card {
     width: 512px;
+    margin-left: 650px;
   }
 
   .demo-card-wide>.mdl-card__title {
     color: #000000;
     height: 176px;
+    text-align: center;
     background: url('./images/travel.jpg') center / cover;
   }
 
@@ -86,7 +89,7 @@
     With our Travel Guide, you will have no problem finding a great place to travel to.
   </div>
   <div class="mdl-card__actions mdl-card--border">
-    <a id="getStarted"class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    <a href="./locations.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
       Get Started
     </a>
   </div>
@@ -98,14 +101,14 @@
 </div>
 <br>
 <!--Image Wheel-->
-    <h4>
+    <h4 class="mainheader">
       Travel Pictures!
-      <div class="scroll-container">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-      </div>
     </h4>
+      <div class="scroll-container">
+        <img class="image" src="./images/travel1.jpg" alt="Travel Pic 1">
+        <img class="image" src="./images/travel2.jpg" alt="Travel Pic 2">
+        <img class="image" src="./images/travel3.jpg" alt="Travel Pic 3">
+        <img class="image" src="./images/travel4.webp" alt="Travel Pic 4">
+      </div>
     </body>
 </html>
