@@ -31,46 +31,6 @@
       </div>
     </header>
 
-          <table>
-         <tr><td>Type a Clash Royale Card!</td>
-         <tr>
-            <td> 
-               <form action = "#">
-                  <div class = "mdl-textfield mdl-js-textfield">
-                     <input class = "mdl-textfield__input" type = "text" id = "userInput">
-                     <label class = "mdl-textfield__label" for = "text1">Search</label>
-                  </div>
-               </form>
-            </td>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Clash Royale</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="./index.html">Home</a>
-        <a class="mdl-navigation__link" href="">About</a>
-      </nav>
-    </div>
-
-      <table border="0">
-        <tbody>
-          <tr>
-            <td><button id="searchButton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">search</i></button></td> <button id="clearButton" class="mdl-button mdl-js-button">Clear</button>
-            <td> </td>
-          </tr>
-
-        <script>
-          const button = document.getElementById('searchButton');
-          const input = document.getElementById('userInput');
-
-          button.addEventListener('click', function (){
-            const q = (input.value || '').trim();
-            const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
-            window.open(url, '_blank');
-          });
-          document.getElementById('clearButton').addEventListener('click', () => {
-            document.getElementById('userInput').value = '';
-            document.getElementById('userInput').focus();
-          });
-        </script>
-        
-</body>
+    <body>
+      
+    </body>

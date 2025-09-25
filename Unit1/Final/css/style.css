@@ -11,6 +11,7 @@ div.scroll-container img {
   padding: 5px;
   height: 300px;
     width: 400px;
+    text-align: center;
 }
 
 .mainheader {
@@ -24,12 +25,13 @@ div.scroll-container img {
   border-width: 4px;
   width: 1000px;
   background-color: #6a96be;
-  margin-left: 400px;
+  margin-left: 480px;
+  justify-content: center;
 }
 
 .card {
-  text-align: center;
-  margin-left: 100px;
+  justify-content: center;
+  margin-left: 400px;
 }
 
 .border {
@@ -38,7 +40,25 @@ div.scroll-container img {
   background: #448ca1;
   width: 450px;
   height: 400px;
-  margin-left: 665px;
+  margin-left: 100px;
+  border-style: inset;
+}
+.border1 {
+  border-radius: 15px;
+  /* one value */
+  background: #448ca1;
+  width: 450px;
+  height: 400px;
+  margin-left: 100px;
+  border-style: inset;
+}
+.border2 {
+  border-radius: 15px;
+  /* one value */
+  background: #448ca1;
+  width: 450px;
+  height: 400px;
+  margin-left: 0px;
   border-style: inset;
 }
 
@@ -51,7 +71,20 @@ div.scroll-container img {
     border-style: solid;
     border-color: white;
 }
-
+.number {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 300px;
+  -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+}
+.description {
+  text-align: center;
+  margin-top: 120px;
+  font-size: 30px;
+  -webkit-text-stroke: 0.25px;
+  -webkit-text-stroke-color: white;
+}
 h2 {
   text-align: center;
 -webkit-text-stroke: 1px;
@@ -60,4 +93,7 @@ h2 {
 
 .container {
   display: flex;
+  padding-left: 2px;
+  justify-content: center;
+  margin: 0 10px;
 }
