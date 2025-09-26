@@ -4,13 +4,6 @@
 
   <!--Links-->
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="./faviconss/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./faviconss/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./faviconss/favicon-16x16.png">
-  <link rel="manifest" href="./site.webmanifest">
-  <link rel="icon" type="image/png" href="./faviconss/favicon-16x16.png">
 
   <!--Navigation-->
   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
@@ -55,60 +48,62 @@
     </div>
 
     <main class="mdl-layout__content">
-      <div class="page-content"></div>
+      <div class="page-content">
+        <!--Header-->
+        <h1 style="text-align: center; " class="mainheader">
+          Search Locations
+          <h3 class="mainheader">
+            Live to Travel
+          </h3>
+        </h1>
+        <br>
+        <!--Search Bar-->
+        <div class="search">
+          <!-- Textfield with Floating Label -->
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="userInput">
+              <label class="mdl-textfield__label" for="userInput">Text...</label>
+            </div>
+          </form>
+          <!-- Colored FAB button with ripple -->
+          <button id="searchButton"
+            class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">search</i>
+          </button>
+          <!-- Raised button with ripple -->
+          <button id="clearButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Clear
+          </button>
+        </div>
+      </div>
     </main>
   </div>
   <br>
   <br>
-  <!--Header-->
-  <h1 style="text-align: center; " class="mainheader">
-    Search Locations
-    <h3 class="mainheader">
-      Live to Travel
-    </h3>
-  </h1>
-  <br>
-  <!--Search Bar-->
-          <table>
-         <tr><td>Type a Clash Royale Card!</td>
-         <tr>
-            <td> 
-               <form action = "#">
-                  <div class = "mdl-textfield mdl-js-textfield">
-                     <input class = "mdl-textfield__input" type = "text" id = "userInput">
-                     <label class = "mdl-textfield__label" for = "text1">Search</label>
-                  </div>
-               </form>
-            </td>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Clash Royale</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="./index.html">Home</a>
-        <a class="mdl-navigation__link" href="">About</a>
-      </nav>
-    </div>
+  <h4 class="mainheader1">
+    More Travel Pictures!
+  </h4>
+  <div class="scroll-container1">
+    <img class="scroll-container img" src="./images/moretravel1.jpg" alt="Travel Pic 1">
+    <img class="scroll-container img" src="./images/moretravel2.jpg" alt="Travel Pic 2">
+    <img class="scroll-container img" src="./images/moretravel3.jpg" alt="Travel Pic 3">
+    <img class="scroll-container img" src="./images/moretravel4.jpg" alt="Travel Pic 4">
+  </div>
 
-      <table border="0">
-        <tbody>
-          <tr>
-            <td><button id="searchButton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">search</i></button></td> <button id="clearButton" class="mdl-button mdl-js-button">Clear</button>
-            <td> </td>
-          </tr>
 
-        <script>
-          const button = document.getElementById('searchButton');
-          const input = document.getElementById('userInput');
+  <script>
+    const button = document.getElementById('searchButton');
+    const input = document.getElementById('userInput');
 
-          button.addEventListener('click', function (){
-            const q = (input.value || '').trim();
-            const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
-            window.open(url, '_blank');
-          });
-          document.getElementById('clearButton').addEventListener('click', () => {
-            document.getElementById('userInput').value = '';
-            document.getElementById('userInput').focus();
-          });
-        </script>
-        
+    button.addEventListener('click', function () {
+      const q = (input.value || '').trim();
+      const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
+      window.open(url, '_blank');
+    });
+    document.getElementById('clearButton').addEventListener('click', () => {
+      document.getElementById('userInput').value = '';
+      document.getElementById('userInput').focus();
+    });
+  </script>
 </body>
